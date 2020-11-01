@@ -168,7 +168,9 @@ function keyPressed(){
 async function getBackgroundImage(){
 
 // fetching the response 
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    // var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("http://worldclockapi.com/api/json/est/now");
+
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
@@ -179,7 +181,7 @@ async function getBackgroundImage(){
     }else{
       bg = "images/bg_night.jpg";
     }
-    
+
     backgroundImg = loadImage(bg);
 }
 
