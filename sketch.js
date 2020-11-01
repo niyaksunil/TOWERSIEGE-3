@@ -172,7 +172,7 @@ async function getBackgroundImage(){
     var response = await fetch("http://worldclockapi.com/api/json/est/now");
 
     var responseJSON = await response.json();
-    var datetime = responseJSON.datetime;
+    var datetime = responseJSON.currentDateTime;
     var hour = datetime.slice(11,13);
 
 // displaying the background of day and night
