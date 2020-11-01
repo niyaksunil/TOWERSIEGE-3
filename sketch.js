@@ -72,7 +72,7 @@ function setup(){
 }
 
 function draw() {
-  background(255,185,151);  
+  //background(255,185,151);  
 
 // calling the backgroundImg
   if(backgroundImg){
