@@ -169,6 +169,7 @@ async function getBackgroundImage(){
 
 // fetching the response 
     var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    console.log(response);
     // var response = await fetch("http://worldclockapi.com/api/json/est/now");
 
     var responseJSON = await response.json();
