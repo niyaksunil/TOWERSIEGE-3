@@ -168,12 +168,12 @@ function keyPressed(){
 async function getBackgroundImage(){
 
 // fetching the response 
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-    console.log(response);
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     // var response = await fetch("http://worldclockapi.com/api/json/est/now");
 
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
+    console.log(datetime);
     var hour = datetime.slice(11,13);
 
 // displaying the background of day and night
